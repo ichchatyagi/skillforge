@@ -45,7 +45,7 @@ const CourseCard = ({ course }) => {
                         className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                     />
                     <div className="absolute top-4 right-4 z-20 bg-black/60 backdrop-blur-md border border-white/10 px-3 py-1 rounded-full text-sm font-bold text-accent-cyan shadow-lg">
-                        {course.price ? `$${course.price}` : 'Free'}
+                        {course.price ? `₹${course.price}` : 'Free'}
                     </div>
                     <div className="absolute top-4 left-4 z-20 bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-wide">
                         {course.category}
@@ -76,11 +76,11 @@ const CourseCard = ({ course }) => {
                                 <span className="text-green-400 font-bold text-lg">Free</span>
                             ) : course.hasDiscount ? (
                                 <div className="flex items-center gap-2">
-                                    <span className="text-white font-bold text-lg">${course.discountPrice}</span>
-                                    <span className="text-gray-500 line-through text-xs">${course.price}</span>
+                                    <span className="text-white font-bold text-lg">₹{course.discountPrice}</span>
+                                    <span className="text-gray-500 line-through text-xs">₹{course.price}</span>
                                 </div>
                             ) : (
-                                <span className="text-white font-bold text-lg">${course.price}</span>
+                                <span className="text-white font-bold text-lg">₹{course.price}</span>
                             )}
                         </div>
                     </div>

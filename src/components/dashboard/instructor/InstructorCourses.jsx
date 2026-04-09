@@ -105,11 +105,11 @@ const InstructorCourses = ({ user }) => {
                                 </div>
                                 <div className="text-center p-2 rounded-lg bg-white/5">
                                     <p className="text-xs text-gray-500">Price</p>
-                                    <p className="text-sm font-bold text-white">${course.price}</p>
+                                    <p className="text-sm font-bold text-white">₹{course.price}</p>
                                 </div>
                                 <div className="text-center p-2 rounded-lg bg-white/5">
                                     <p className="text-xs text-gray-500">Revenue</p>
-                                    <p className="text-sm font-bold text-green-400">${course.revenue || 0}</p>
+                                    <p className="text-sm font-bold text-green-400">₹{course.revenue || 0}</p>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@ const InstructorCourses = ({ user }) => {
                                     value={newCourse.category} onChange={e => setNewCourse({ ...newCourse, category: e.target.value })} />
                             </div>
                             <div>
-                                <label className="block text-sm text-gray-400 mb-1">Price ($)</label>
+                                <label className="block text-sm text-gray-400 mb-1">Price (₹)</label>
                                 <input type="number" required className="w-full bg-[#0B1220] border border-white/10 rounded-lg px-4 py-2 text-white"
                                     value={newCourse.price} onChange={e => setNewCourse({ ...newCourse, price: e.target.value })} />
                             </div>

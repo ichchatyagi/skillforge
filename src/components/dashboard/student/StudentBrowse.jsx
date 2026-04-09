@@ -61,7 +61,7 @@ const StudentBrowse = ({ user }) => {
                         </div>
 
                         <div className="flex items-center justify-between pt-4 border-t border-white/5">
-                            <span className="text-xl font-bold text-white">${course.price}</span>
+                            <span className="text-xl font-bold text-white">₹{course.price}</span>
                             <Button onClick={() => handleEnroll(course._id)} variant="gradient" className="text-sm py-2 px-6 shadow-neon">
                                 Enroll Now
                             </Button>

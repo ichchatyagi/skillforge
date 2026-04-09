@@ -24,7 +24,7 @@ const AdminOverview = ({ setActiveView }) => {
                 {[
                     { label: "Total Users", value: "12,403", icon: Users, color: "text-blue-400", bg: "bg-blue-500/10" },
                     { label: "Total Courses", value: "86", icon: BookOpen, color: "text-purple-400", bg: "bg-purple-500/10" },
-                    { label: "Revenue (YTD)", value: "$450,200", icon: DollarSign, color: "text-green-400", bg: "bg-green-500/10" },
+                    { label: "Revenue (YTD)", value: "₹450,200", icon: DollarSign, color: "text-green-400", bg: "bg-green-500/10" },
                     { label: "Active Subscriptions", value: "3,402", icon: TrendingUp, color: "text-yellow-400", bg: "bg-yellow-500/10" }
                 ].map((stat, idx) => (
                     <GlassCard key={idx} className="p-6">
@@ -51,7 +51,7 @@ const AdminOverview = ({ setActiveView }) => {
                     <div className="space-y-4">
                         {[
                             { action: "New User Registration", user: "Alice Freeman", time: "2 mins ago", type: "user" },
-                            { action: "Course Purchase", user: "Bob Smith", time: "15 mins ago", amount: "+$49.99", type: "sale" },
+                            { action: "Course Purchase", user: "Bob Smith", time: "15 mins ago", amount: "+₹49.99", type: "sale" },
                             { action: "New Course Submitted", user: "Prof. X", time: "1 hour ago", type: "course" },
                             { action: "System Backup", user: "System", time: "2 hours ago", type: "system" }
                         ].map((item, idx) => (

@@ -42,7 +42,7 @@ const InstructorFinance = ({ user }) => {
                         </div>
                         <div>
                             <p className="text-gray-400 text-sm">Total Earnings</p>
-                            <h3 className="text-2xl font-bold text-white">${totalEarnings.toFixed(2)}</h3>
+                            <h3 className="text-2xl font-bold text-white">₹{totalEarnings.toFixed(2)}</h3>
                         </div>
                     </div>
                 </GlassCard>
@@ -53,7 +53,7 @@ const InstructorFinance = ({ user }) => {
                         </div>
                         <div>
                             <p className="text-gray-400 text-sm">Available Balance</p>
-                            <h3 className="text-2xl font-bold text-white">${availableBalance.toFixed(2)}</h3>
+                            <h3 className="text-2xl font-bold text-white">₹{availableBalance.toFixed(2)}</h3>
                         </div>
                     </div>
                 </GlassCard>
@@ -89,7 +89,7 @@ const InstructorFinance = ({ user }) => {
                                 <tr key={tx.id} className="hover:bg-white/5 transition-colors">
                                     <td className="px-6 py-4 font-mono text-sm">{tx.id}</td>
                                     <td className="px-6 py-4 text-sm">{new Date(tx.date).toLocaleDateString()}</td>
-                                    <td className="px-6 py-4 text-white font-medium">${tx.amount.toFixed(2)}</td>
+                                    <td className="px-6 py-4 text-white font-medium">₹{tx.amount.toFixed(2)}</td>
                                     <td className="px-6 py-4">
                                         <div className="flex items-center gap-2">
                                             {tx.status === 'Pending' ? <Clock className="w-4 h-4 text-yellow-400" /> : <CheckCircle className="w-4 h-4 text-green-400" />}

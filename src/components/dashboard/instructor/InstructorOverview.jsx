@@ -30,7 +30,7 @@ const InstructorOverview = ({ user, setActiveView }) => {
             {/* Stats Grid */}
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
                 {[
-                    { label: "Total Revenue", value: `$${totalRevenue}`, icon: DollarSign, color: "text-green-400", bg: "bg-green-500/10" },
+                    { label: "Total Revenue", value: `₹${totalRevenue}`, icon: DollarSign, color: "text-green-400", bg: "bg-green-500/10" },
                     { label: "Active Students", value: totalStudents, icon: Users, color: "text-blue-400", bg: "bg-blue-500/10" },
                     { label: "Active Courses", value: myCourses.length, icon: BookOpen, color: "text-purple-400", bg: "bg-purple-500/10" },
                     { label: "Phone Rating", value: averageRating, icon: Star, color: "text-yellow-400", bg: "bg-yellow-500/10" }
